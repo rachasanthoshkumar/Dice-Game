@@ -48,7 +48,7 @@ const Box = styled.div`
 
   @media only screen and (max-width: 480px) {
     height: 35px;
-  width: 35px;
+    width: 35px;
 }
 
 `;
@@ -59,6 +59,7 @@ flex-direction: column;
 align-items: end;
 .flex{
     display: flex;
+    flex-direction: row;
     gap: 24px;
     margin-bottom: 35px;
 }
@@ -67,4 +68,8 @@ align-items: end;
   font-weight: 400;
   margin-bottom: 3px;
 }
+@media only screen and (max-width: 480px){
+  
+}
+
 `;

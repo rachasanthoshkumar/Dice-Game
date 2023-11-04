@@ -44,9 +44,12 @@ const GamePlay = () => {
   return (
     <MainContainer>
         <div className='flex'>
-            <TotalScore score={score} setScore={setScore}/>
+            <TotalScore  score={score} setScore={setScore}/>
+           
             <SelectNumber setError={setError} error={error} selectedNumber={selectedNumber}  
             setSelectedNumber={setSelectedNumber}/>
+           
+            
             
         </div>
         <RollDice  setScore={setScore} currentState={currentState} rollDice={rollDice}/>
@@ -98,6 +101,7 @@ padding-top: 70px;
 
     }
   }
+
  
 
 `;

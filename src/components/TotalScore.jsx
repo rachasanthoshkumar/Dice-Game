@@ -24,12 +24,14 @@ text-align: center;
         font-weight: 500;
     }
     @media only screen and (max-width: 600px) {
+    margin: 2px 2px;
  h3{
   font-size: 55px;
   line-height: 55px;
  }
  p{
   font-size: 15px;
+  margin-bottom: 5px;
  }
 }
 
