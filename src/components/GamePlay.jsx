@@ -5,14 +5,16 @@ import styled from 'styled-components'
 import RollDice from './RollDice'
 import Rules from './Rules'
 import { Button } from '../styled/Button'
+import StartGame from './StartGame'
 
 
-const GamePlay = () => {
+const GamePlay = ({isGameStarted,setIsGameStarted}) => {
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentState, setCurrentState] = useState(1);
   const [score,setScore] = useState(0)
   const [error,setError] = useState("")
   const [showRules,setShowRules] = useState(false);
+  const [goHome,setGoHome] = useState(false);
   const generateRandomNumber = (max, min) => {
     return Math.floor(Math.random() * (max - min) + min);
   };
@@ -40,9 +42,17 @@ const GamePlay = () => {
     setScore(0)
  }
 
+ const goHomeFunction = ()=>{
+  setGoHome(!goHome)
+  setIsGameStarted(!isGameStarted)
+ }
+
 
   return (
-    <MainContainer>
+    <>
+     {
+        
+        goHome? <StartGame/> : <MainContainer>
         <div className='flex'>
             <TotalScore  score={score} setScore={setScore}/>
            
@@ -56,10 +66,15 @@ const GamePlay = () => {
         <div className="btns">
           <Button className='reset-btn' onClick={resetScore}>Reset</Button>
           <Button onClick={()=>setShowRules(prev=>!prev)}>{showRules?"Hide":"Show"} Rules</Button>
+          <Button className='goHome-btn' onClick={goHomeFunction}>Home</Button>
       </div>
         {showRules && <Rules/>}
     
     </MainContainer>
+     }
+    
+    </>
+   
     
   )
 }

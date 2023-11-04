@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-     {isGameStarted?<GamePlay/>:<StartGame toggle={toggleGame}/>}
+     {isGameStarted?<GamePlay isGameStarted={isGameStarted} setIsGameStarted={setIsGameStarted}/>:<StartGame toggle={toggleGame}/>}
     </>
   )
 }
