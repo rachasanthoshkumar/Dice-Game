@@ -49,6 +49,7 @@ const Box = styled.div`
   @media only screen and (max-width: 480px) {
     height: 35px;
     width: 35px;
+    font-size: 13px;
 }
 
 `;

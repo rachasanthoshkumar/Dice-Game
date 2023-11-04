@@ -33,8 +33,11 @@ const Container = styled.div`
     }
 
     @media only screen and (max-width: 480px) {
-        min-height: 100vh;
-        margin-top: 75px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow-y: 0;
+        margin-top: 85px;
       display: flex;
       flex-direction: column;
       img{
