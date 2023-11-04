@@ -69,7 +69,9 @@ align-items: end;
   margin-bottom: 3px;
 }
 @media only screen and (max-width: 480px){
-  
+  .flex{
+    gap:15px
+  }
 }
 
 `;

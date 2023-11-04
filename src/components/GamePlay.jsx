@@ -102,6 +102,8 @@ padding-top: 70px;
     }
   }
 
- 
+  @media only screen and (max-width: 480px){
+    margin: 5px 5px;
+}
 
 `;

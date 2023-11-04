@@ -32,6 +32,12 @@ const Container = styled.div`
     margin-top: 10px;
     font-weight: 500;
   }
+  @media screen and (max-width: 480px) {
+    img{
+      width: 200px;
+      height: 200px;
+    }
+  }
   
   
 `;

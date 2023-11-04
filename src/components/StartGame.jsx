@@ -44,10 +44,11 @@ const Container = styled.div`
       }
       .content h1{
 
-        font-size: 69px;
+        font-size: 65px;
       }
       .content Button{
-        margin-top: 25px;
+        margin-top: 12px;
+        
       }
 }
 

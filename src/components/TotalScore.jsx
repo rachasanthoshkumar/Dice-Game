@@ -30,8 +30,9 @@ text-align: center;
   line-height: 55px;
  }
  p{
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 5px;
+  white-space: nowrap;
  }
 }
 
