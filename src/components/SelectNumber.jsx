@@ -10,7 +10,7 @@ const SelectNumber = ({ setError,error,selectedNumber, setSelectedNumber }) => {
   }
   return (
     
-    <Lauda>
+    <section>
       <p className="error">{error}</p>
         <div className="flex">
             {arr.map((value, i) => (
@@ -24,7 +24,7 @@ const SelectNumber = ({ setError,error,selectedNumber, setSelectedNumber }) => {
         </div>
      
         
-    </Lauda>
+    </section>
       
     
   );
@@ -54,7 +54,7 @@ const Box = styled.div`
 
 `;
 
-const Lauda = styled.div`
+const section = styled.div`
 display: flex;
 flex-direction: column;
 align-items: end;
